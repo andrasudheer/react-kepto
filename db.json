@@ -1,3 +1,109 @@
 {
-    "test": "234"
-}
+    "locationSearch": "https://api.zeptonow.com/api/v1/maps/place/autocomplete/?place_name=ben",
+    "icons": [
+      {
+        "GPS": "https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.53.3/tr:w-0.2,ar-0.2-0.2,pr-true,f-auto,q-80//images/google-map/current-location-marker-icon.svg"
+      },
+      {
+        "LOGO": "https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.53.3/images/header/primary-logo.svg"
+      }
+    ],
+    "categoriesList": [
+      {
+        "id": "CL10001",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "CL10002",
+        "category_name": "Snacks & Drinks"
+      },
+      {
+        "id": "CL10003",
+        "category_name": "Beauty & Personal Care"
+      },
+      {
+        "id": "CL10004",
+        "category_name": "Household Essentials"
+      }
+    ],
+    "category": [
+      {
+        "id": "FV10001",
+        "name": "fruits and veg",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10002",
+        "name": "dairy, bread and eggs",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/474e6e58-1894-4378-86f1-168cc7266d1a.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10003",
+        "name": "Atta, Rice, oil and dals",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/54dd01e1-2781-4a45-bc3a-ed53ebab9bd9.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10004",
+        "name": "meat",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/1237afd6-40bf-4942-a266-25f23025e86c.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10005",
+        "name": "masala",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/8d4d3977-5197-49d9-9867-8a670524e48b.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10006",
+        "name": "breakfast",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/ab241d87-da5b-4830-b38f-1a6cd30d0d41.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10007",
+        "name": "packed food",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/47b3a34d-8f9f-42fe-97a0-4d8350748924.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "c859",
+        "name": "zepto cafe",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/031c2a24-d40f-4272-8c71-8a566252495e.png",
+        "category_name": "Snacks & Drinks"
+      },
+      {
+        "id": "FV10005",
+        "name": "masala",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/8d4d3977-5197-49d9-9867-8a670524e48b.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10006",
+        "name": "breakfast",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/ab241d87-da5b-4830-b38f-1a6cd30d0d41.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "FV10007",
+        "name": "packed food",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/47b3a34d-8f9f-42fe-97a0-4d8350748924.png",
+        "category_name": "Grocery & Kitech"
+      },
+      {
+        "id": "c859",
+        "name": "zepto cafe",
+        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/031c2a24-d40f-4272-8c71-8a566252495e.png",
+        "category_name": "Snacks & Drinks"
+      }
+    ],
+    "category-menus": [
+      {
+        "id": "C10001",
+        "category_name": "Grocery & Kitech"
+      }
+    ]
+  }

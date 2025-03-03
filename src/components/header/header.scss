@@ -1,0 +1,34 @@
+.header-wrapper{
+    display: flex;
+    background: linear-gradient(#ECDCFF, #FFFFFF);
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+.searchbar{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding-left: 40px;
+}
+.header-item-search{
+    width: 60%;
+}
+.search-bar{
+    position: relative;
+}
+
+.search-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.downArrow-icon{
+    padding-left: 10px;
+}
+.header-item-icon{
+    text-align: center;
+}
