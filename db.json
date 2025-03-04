@@ -74,36 +74,13 @@
         "name": "zepto cafe",
         "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/031c2a24-d40f-4272-8c71-8a566252495e.png",
         "category_name": "Snacks & Drinks"
-      },
-      {
-        "id": "FV10005",
-        "name": "masala",
-        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/8d4d3977-5197-49d9-9867-8a670524e48b.png",
-        "category_name": "Grocery & Kitech"
-      },
-      {
-        "id": "FV10006",
-        "name": "breakfast",
-        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/ab241d87-da5b-4830-b38f-1a6cd30d0d41.png",
-        "category_name": "Grocery & Kitech"
-      },
-      {
-        "id": "FV10007",
-        "name": "packed food",
-        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/47b3a34d-8f9f-42fe-97a0-4d8350748924.png",
-        "category_name": "Grocery & Kitech"
-      },
-      {
-        "id": "c859",
-        "name": "zepto cafe",
-        "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/031c2a24-d40f-4272-8c71-8a566252495e.png",
-        "category_name": "Snacks & Drinks"
       }
     ],
-    "category-menus": [
+    "category-products-list-FV10001": [
       {
-        "id": "C10001",
-        "category_name": "Grocery & Kitech"
+        "id": "FF10001",
+        "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/102e9688-c220-4a0e-bc35-0f0b16de6ad1.png",
+        "category_name":"Fruits Vegitables"
       }
     ]
   }

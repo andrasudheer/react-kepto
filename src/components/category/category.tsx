@@ -86,7 +86,7 @@ const Category = () => {
               {categoryList[item].map((obj: any) => {
                 return (
                   <div className={"each-img"}>
-                    <img src={obj["img_url"]} alt="" className={"img"} style={{ 'width': '100%', 'height': '300px', 'objectFit': 'cover' }} />
+                    <img src={obj["img_url"]} alt="" className={"img"} style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'cover' }} />
                   </div>
                 );
               })}
