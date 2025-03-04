@@ -6,6 +6,7 @@ import {
   ShoppingCartOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
+import UsersRole from "../user-roles/userRoles";
 
 const Header = () => {
   const [icons, setIcons] = useState<any>({});
@@ -45,6 +46,7 @@ const Header = () => {
             />
         </div>
       </div>
+      <div><UsersRole/></div>
       <div className="header-item-icon">
         <div>
           <UserOutlined />

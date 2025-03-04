@@ -1,5 +1,17 @@
 {
   "locationSearch": "https://api.zeptonow.com/api/v1/maps/place/autocomplete/?place_name=ben",
+  "user_roles": [
+    {
+      "role_id":"U10001",
+      "role_code": "ADMIN",
+      "role_name":"Admin"
+    },
+    {
+      "role_id":"U10002",
+      "role_code": "CUSTOMER",
+      "role_name":"Customer"
+    }
+  ],
   "icons": [
     {
       "GPS": "https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.53.3/tr:w-0.2,ar-0.2-0.2,pr-true,f-auto,q-80//images/google-map/current-location-marker-icon.svg",
@@ -99,6 +111,36 @@
       "id": "bf90",
       "name": "Frozen Food",
       "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-226-334,pr-true,f-auto,q-80/cms/category/366e5b7d-2028-4935-b9f1-75bfa085c3d7.png",
+      "category_name": "Snacks & Drinks"
+    },
+    {
+      "id": "ac74",
+      "name": "Baby Care",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/227b70d5-d1cf-428b-a276-1392c5067eb3.png",
+      "category_name": "Beauty & Personal Care"
+    },
+    {
+      "id": "9b78",
+      "name": "Biscuits",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-226-334,pr-true,f-auto,q-80/cms/category/9b88fff5-73f5-46fd-999f-1622db4203d7.png",
+      "category_name": "Snacks & Drinks"
+    },
+    {
+      "id": "4bbd",
+      "name": "Cold Drinks",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/59d2c0cc-e776-407c-9142-7e69898d9eab.png",
+      "category_name": "Snacks & Drinks"
+    },
+    {
+      "id": "dbc8",
+      "name": "Sweet",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-300-444,pr-true,f-auto,q-80/cms/category/ec7b14c6-2640-4165-b3ae-68c09a249ae0.png",
+      "category_name": "Snacks & Drinks"
+    },
+    {
+      "id": "eb07",
+      "name": "Munchines",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-210,ar-225-333,pr-true,f-auto,q-80/cms/category/90b2faee-1461-465a-a8c6-8c84716dd7dc.png",
       "category_name": "Snacks & Drinks"
     }
   ],

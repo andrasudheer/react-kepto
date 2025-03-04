@@ -60,7 +60,7 @@ const AddCategoryModal: React.FC<any> = (props) => {
                 <Form.Item<any>
                     label="Category"
                     name="category"
-                    rules={[{ required: true, message: 'Please input your Image Url!' }]}
+                    rules={[{ required: true, message: 'Please input your Category!' }]}
                 >
                     <Select
                         showSearch

@@ -33,3 +33,8 @@ h1.category-title {
     border: none;
     cursor: pointer;
 }
+.alert-data{
+    position: absolute;
+    top: 10px;
+    z-index: 9999;
+}

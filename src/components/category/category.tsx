@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import "./category.scss";
 import AddCategoryModal from "../modals/addcategorymodal";
+import { message } from 'antd';
+import Spinner from "../spinner/spinner";
 
 const Category = () => {
   const [categoryList, setCategoryList] = useState<any>([]);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [categories, setCategories] = useState([])
+  const [messageApi, contextHolder] = message.useMessage();
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     getCategoryList();
@@ -44,7 +48,9 @@ const Category = () => {
         //     ),
         //   });
         // });
+        setShowLoader(false);
         setCategoryList(categoryList);
+        
       });
   }
 
@@ -72,6 +78,7 @@ const Category = () => {
   }
 
   const formSubmitData = (formData: any) => {
+    setShowLoader(true);
     const payload = {
       "name": formData.productname,
       "img_url": formData.imageurl,
@@ -87,14 +94,20 @@ const Category = () => {
       return res.json();
     }).then((data: any) => {
       // GET API CALL
+      messageApi.open({
+        type: 'success',
+        content: 'Category added successfully!',
+      });
       getCategoryList();
+      setModalOpen(false);
     })
-    setModalOpen(false);
 
   }
 
   return (
     <div className={"category-wrapper"}>
+      <div className={"alert-data"}>{contextHolder}</div>
+      { showLoader && (<Spinner />)}
       <div className={"additems"}>
         <button className={"items"} onClick={handleCategoryItems}>Add Category Items</button>
       </div>
