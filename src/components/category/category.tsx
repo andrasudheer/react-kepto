@@ -8,6 +8,11 @@ const Category = () => {
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
+    getCategoryList();
+    getCategoryListDropdownItems();
+  }, []);
+
+  const getCategoryList = () => {
     fetch("http://localhost:3000/category")
       .then((res) => {
         return res.json();
@@ -41,13 +46,13 @@ const Category = () => {
         // });
         setCategoryList(categoryList);
       });
-  }, []);
+  }
 
-  useEffect(() => {
+  const getCategoryListDropdownItems = () => {
     fetch("http://localhost:3000/categoriesList").then((res) => {
       return res.json();
     }).then((data: any) => {
-      const categoryDropdown = data.map((categoryItem:any)=> {
+      const categoryDropdown = data.map((categoryItem: any) => {
         return {
           "label": categoryItem.category_name,
           "value": categoryItem.id
@@ -55,23 +60,38 @@ const Category = () => {
       })
       setCategories(categoryDropdown);
     })
-  }, [])
+  }
 
- 
+
   const handleCategoryItems = () => {
     setModalOpen(true)
   }
 
-  const handleOk = () => {
+  const handleCancel = () => {
     setModalOpen(false);
   }
 
-  const handleCancel = () => {
-    // form.resetFields();
-   // setModalOpen(false);
+  const formSubmitData = (formData: any) => {
+    const payload = {
+      "name": formData.productname,
+      "img_url": formData.imageurl,
+      "category_name": formData.category.label
+    }
+
+    //POST API CALL
+
+    fetch("http://localhost:3000/category", {
+      method: "POST",
+      body: JSON.stringify(payload)
+    }).then((res) => {
+      return res.json();
+    }).then((data: any) => {
+      // GET API CALL
+      getCategoryList();
+    })
+    setModalOpen(false);
+
   }
-
-
 
   return (
     <div className={"category-wrapper"}>
@@ -96,10 +116,10 @@ const Category = () => {
       })}
       <AddCategoryModal
         modalOpen={modalOpen}
-        handleOk={handleOk}
-        handleCancel={handleCancel}
         categories={categories}
-         />
+        formSubmitData={formSubmitData}
+        handleCancel={handleCancel}
+      />
     </div>
   );
 };
