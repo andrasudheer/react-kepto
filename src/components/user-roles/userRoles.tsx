@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Button, Dropdown, Space } from 'antd';
+import { KeptoContext } from '../keptoContext/keptoContex';
 
 const UsersRole: React.FC = () => {
     const [users, setUsers] = useState([])
+    const {setRolesType} = useContext(KeptoContext)
 
     useEffect(() => {
         fetch("http://localhost:3000/user_roles").then((res) => {
@@ -19,9 +21,9 @@ const UsersRole: React.FC = () => {
     }, [])
 
     const handleClick = (user: any) => {
-        console.log("user.......", user);
+        setRolesType(user);
     }
-
+ 
     return (
         <Space direction="vertical">
             <Space wrap>
@@ -31,9 +33,6 @@ const UsersRole: React.FC = () => {
             </Space>
         </Space>
     )
-
-
 }
-
 
 export default UsersRole;

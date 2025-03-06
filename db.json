@@ -10,6 +10,11 @@
       "role_id":"U10002",
       "role_code": "CUSTOMER",
       "role_name":"Customer"
+    },
+    {
+      "role_id":"U10003",
+      "role_code": "CEO",
+      "role_name":"CEO"
     }
   ],
   "icons": [
@@ -144,11 +149,232 @@
       "category_name": "Snacks & Drinks"
     }
   ],
-  "category-products-list-FV10001": [
+  "category-menu-list-FV10001": [
     {
       "id": "FF10001",
-      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/102e9688-c220-4a0e-bc35-0f0b16de6ad1.png",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-160-161,pr-true,f-auto,q-80/cms/sub_category/694c07e0-542b-49db-a596-b1f4f4935342.png",
       "category_name": "Fruits Vegitables"
+    },
+    {
+      "id": "FF10002",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-160-161,pr-true,f-auto,q-80/cms/sub_category/7e51d0f6-ee57-42f3-98f9-945033ad3e5f.png",
+      "category_name": "Fresh Fruits"
+    },
+    {
+      "id": "FF10003",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/bd21967b-db0e-4cc5-9ea2-5ba1571d58d1.png",
+      "category_name": "Flowers & Leaves"
+    },
+    {
+      "id": "FF10004",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-140-140,pr-true,f-auto,q-80/cms/sub_category/7cc63da3-7d7e-4443-bfdc-c4f21e6df5e7.png",
+      "category_name": "Seasons Picks"
+    },
+    {
+      "id": "FF10005",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-160-161,pr-true,f-auto,q-80/cms/sub_category/63d60637-1717-4eb3-9df3-a9bfb6f05d49.png",
+      "category_name": "Leafy, Herbs & Seasonings"
+    },
+    {
+      "id": "FF10006",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-480-480,pr-true,f-auto,q-80/cms/sub_category/c82b4bac-d830-46e3-a6d3-ac8934abc9f5.png",
+      "category_name": "Exotics & Premium"
+    },
+    {
+      "id": "FF10007",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-480-480,pr-true,f-auto,q-80/cms/sub_category/8eaac110-0f14-47d3-b986-b024f107aba3.png",
+      "category_name": "Organics & Hydroponics"
+    },
+    {
+      "id": "FF10008",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-480-480,pr-true,f-auto,q-80/cms/sub_category/f3282f5f-6ab2-4998-977f-926d86bcbb56.png",
+      "category_name": "Cuts & Sprouts"
+    },
+    {
+      "id": "FF10009",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-480-480,pr-true,f-auto,q-80/cms/sub_category/7194d5a4-c6a3-4a8c-9749-474e44bf5519.png",
+      "category_name": "Plants & Gardening"
+    },
+    {
+      "id": "FF10010",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-480-480,pr-true,f-auto,q-80/cms/sub_category/30ac1f73-9e06-4c8f-a8ea-fda0903cb390.png",
+      "category_name": "Dried & Dehydrated"
+    }
+  ],
+  "product-list-FF10001": [
+    {
+      "product_name": "Coccinia (Kundru)/Dondakaya",
+      "offer":"52",
+      "quantity": "250",
+      "units": "g",
+      "price":"59",
+      "cartItems": "0",
+      "id":"EFV10001",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/a78cef5a-9c14-4b84-898b-75bb6d256b5f.jpeg"
+    },
+    {
+      "product_name": "Lady Finger",
+      "offer":"44",
+      "quantity": "250",
+      "units": "g",
+      "price":"43",
+      "cartItems": "0",
+      "id":"EFV10002",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/26cb1d59-021d-44e4-b414-7bf6fdb307e4.jpeg"
+    },
+    {
+      "product_name": "Beetroot",
+      "offer":"51",
+      "quantity": "250",
+      "units": "g",
+      "price":"35",
+      "cartItems": "0",
+      "id":"EFV10003",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/524e432c-4827-4938-a4f0-7102ffc2aee4.jpeg"
+    },
+    {
+      "product_name": "Tomato Hybrid",
+      "offer":"11",
+      "quantity": "500",
+      "units": "g",
+      "price":"36",
+      "cartItems": "0",
+      "id":"EFV10005",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/68af185b-d450-4d43-924e-0590d8e66f00.jpeg"
+    },   
+    {
+      "product_name": "Lady Finger",
+      "offer":"11",
+      "quantity": "500",
+      "units": "g",
+      "price":"98",
+      "cartItems": "0",
+      "id":"EFV10006",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/06032a57-4f74-4a81-8526-ac194804eef1.jpeg"
+    },
+    {
+      "product_name": "Organic Potato",
+      "offer":"30",
+      "quantity": "475",
+      "units": "g",
+      "price":"80",
+      "cartItems": "0",
+      "id":"EFV10007",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/00310ee0-ae7b-448f-907d-a3064fc1b56d.jpeg"
+    },
+    {
+      "product_name": "Nagpur Brinjal (Baingan)/Nagpur Vankaya",
+      "offer": null,
+      "quantity": "150",
+      "units": "g",
+      "price":"20",
+      "cartItems": "0",
+      "id":"EFV10008",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-250-188,pr-true,f-auto,q-80/inventory/product/d74c688d-3cd6-4e60-8f18-48b69d118ef3-5cfbf39a-be6f-45ef-8a72-49529b67b650.jpeg"
+    },
+    {
+      "product_name": "Colocasia (Kachalu)/Chamagadda",
+      "offer":"33",
+      "quantity": "180",
+      "units": "g",
+      "price":"30",
+      "cartItems": "0",
+      "id":"EFV10009",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/10ada759-c46f-4420-90d2-f44f5f5e9dc6.jpeg"
+    },
+    {
+      "product_name": "Banana Raw / Kura Aratikaya",
+      "offer":"20",
+      "quantity": "2",
+      "units": "pc",
+      "price":"30",
+      "cartItems": "0",
+      "id":"EFV10010",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/cfb4678c-1e37-4475-8828-335b0a0223d7.jpeg"
+    },    
+    {
+      "product_name": "Bitter Gourd",
+      "offer": null,
+      "quantity": "500",
+      "units": "g",
+      "price":"80",
+      "cartItems": "0",
+      "id":"EFV10011",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/2ac412b5-ef81-4dfd-a025-3752d922e178.jpeg"
+    },
+    {
+      "product_name": "Bottle Gourd",
+      "offer":"20",
+      "quantity": "1",
+      "units": "kg",
+      "price":"100",
+      "cartItems": "0",
+      "id":"EFV10012",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/2f73f1ca-f89c-492b-b22a-36f8d056beb8.jpeg"
+    },    
+    {
+      "product_name": "Onion",
+      "offer":"23",
+      "quantity": "1",
+      "units": "kg",
+      "price":"140",
+      "cartItems": "0",
+      "id":"EFV10013",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/cfba9ff1-4bfb-4d5f-96ca-747c8d066ede.jpeg"
+    },
+    {
+      "product_name": "Capsicum Green",
+      "offer":"40",
+      "quantity": "500",
+      "units": "g",
+      "price":"89",
+      "cartItems": "0",
+      "id":"EFV10014",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/14e7741b-ed43-443e-b8f7-5131715c8b59.jpeg"
+    },    
+    {
+      "product_name": "Beans Broad (Chikkudu)",
+      "offer":"9",
+      "quantity": "1",
+      "units": "kg",
+      "price":"80",
+      "cartItems": "0",
+      "id":"EFV10015",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/77465c2c-53d9-4c89-9c0f-098abef3c198.jpeg"
+    }
+  ],
+  "category-menu-list-FV10002": [
+    {
+      "id": "DB10001",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-120-121,pr-true,f-auto,q-80/cms/sub_category/81.png",
+      "category_name": "Cheese"
+    },
+    {
+      "id": "DB10002",
+      "leftMenuIcon": "https://cdn.zeptonow.com/production/tr:w-90,ar-120-121,pr-true,f-auto,q-80/cms/sub_category/82.png",
+      "category_name": "Panner & Cream"
+    }
+  ],
+  "product-list-DB10001": [
+    {
+      "product_name": "Britannia The Laughing Cow Cheese- Slices",
+      "offer":"24",
+      "quantity": "400",
+      "units": "g",
+      "price":"429",
+      "cartItems": "0",
+      "id":"CK10001",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-1069-1218,pr-true,f-auto,q-80/cms/product_variant/b2464440-4a89-4b25-84b5-137bd2a1cdbc.jpeg"
+    },
+    {
+      "product_name": "Cheese Slice",
+      "offer":"40",
+      "quantity": "300",
+      "units": "g",
+      "price":"388",
+      "cartItems": "0",
+      "id":"CK10002",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/91bb6223-6461-4dd5-8628-90565b072a1b.jpeg"
     }
   ]
 }

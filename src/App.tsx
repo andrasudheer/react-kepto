@@ -1,9 +1,12 @@
+import { KeptoProvider } from './components/keptoContext/keptoContex';
 import Zepto from './components/zepto';
 
 function App() {
   return (
     <>
-      <Zepto/>
+      <KeptoProvider>
+        <Zepto />
+      </KeptoProvider>
     </>
   );
 }

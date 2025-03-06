@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./category.scss";
 import AddCategoryModal from "../modals/addcategorymodal";
 import { message } from 'antd';
 import Spinner from "../spinner/spinner";
+import { KeptoContext } from "../keptoContext/keptoContex";
 
 const Category = () => {
   const [categoryList, setCategoryList] = useState<any>([]);
@@ -10,10 +11,13 @@ const Category = () => {
   const [categories, setCategories] = useState([])
   const [messageApi, contextHolder] = message.useMessage();
   const [showLoader, setShowLoader] = useState(true);
+  const { rolesType } = useContext(KeptoContext);
+  const ROLE_ACCESS = ["ADMIN", "CEO"];
 
   useEffect(() => {
     getCategoryList();
     getCategoryListDropdownItems();
+    //console.log("role...", role);
   }, []);
 
   const getCategoryList = () => {
@@ -50,7 +54,7 @@ const Category = () => {
         // });
         setShowLoader(false);
         setCategoryList(categoryList);
-        
+
       });
   }
 
@@ -107,10 +111,14 @@ const Category = () => {
   return (
     <div className={"category-wrapper"}>
       <div className={"alert-data"}>{contextHolder}</div>
-      { showLoader && (<Spinner />)}
-      <div className={"additems"}>
-        <button className={"items"} onClick={handleCategoryItems}>Add Category Items</button>
-      </div>
+      {showLoader && (<Spinner />)}
+      {
+        ROLE_ACCESS.includes(rolesType.role_code) && (
+          <div className={"additems"}>
+            <button className={"items"} onClick={handleCategoryItems}>Add Category Items</button>
+          </div>
+        )
+      }
       {Object.keys(categoryList).map((item) => {
         return (
           <div className={"each-category"}>
