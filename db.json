@@ -383,6 +383,20 @@
       "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/77465c2c-53d9-4c89-9c0f-098abef3c198.jpeg"
     }
   ],
+  "product-list-FF10002": [
+    {
+      "product_name": "Grapes Bengalore Blue",
+      "offer": "52",
+      "quantity": "250",
+      "units": "g",
+      "price": "59",
+      "cartItems": "0",
+      "display": true,
+      "out_of_stock": false,
+      "id": "FFR10001",
+      "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-980-980,pr-true,f-auto,q-80/cms/product_variant/b297678b-6739-4deb-9423-89f3d60ee51f.jpeg"
+    }
+  ],
   "category-menu-list-FV10002": [
     {
       "id": "DB10001",
