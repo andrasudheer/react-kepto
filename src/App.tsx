@@ -1,3 +1,4 @@
+import { AppRouting } from './app-routing';
 import { KeptoProvider } from './components/keptoContext/keptoContex';
 import Zepto from './components/zepto';
 
@@ -5,7 +6,7 @@ function App() {
   return (
     <>
       <KeptoProvider>
-        <Zepto />
+          <AppRouting />
       </KeptoProvider>
     </>
   );
