@@ -4,6 +4,7 @@ import AddCategoryModal from "../modals/addcategorymodal";
 import { message } from 'antd';
 import Spinner from "../spinner/spinner";
 import { KeptoContext } from "../keptoContext/keptoContex";
+import { useNavigate } from "react-router-dom";
 
 const Category = () => {
   const [categoryList, setCategoryList] = useState<any>([]);
@@ -13,6 +14,7 @@ const Category = () => {
   const [showLoader, setShowLoader] = useState(true);
   const { rolesType } = useContext(KeptoContext);
   const ROLE_ACCESS = ["ADMIN", "CEO"];
+  const navigate = useNavigate();
 
   useEffect(() => {
     getCategoryList();
@@ -108,6 +110,11 @@ const Category = () => {
 
   }
 
+  const handleCategory = (category:any) => {
+    navigate(`/category/${category.id}`)
+       //console.log("CATEGORY....", category.id);
+  }
+
   return (
     <div className={"category-wrapper"}>
       <div className={"alert-data"}>{contextHolder}</div>
@@ -126,7 +133,7 @@ const Category = () => {
             <div className={"img-wrapper"}>
               {categoryList[item].map((obj: any) => {
                 return (
-                  <div className={"each-img"}>
+                  <div className={"each-img"} onClick={()=>handleCategory(obj)}>
                     <img src={obj["img_url"]} alt="" className={"img"} style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'cover' }} />
                   </div>
                 );
