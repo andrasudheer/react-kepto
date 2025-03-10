@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "./category.scss";
 import AddCategoryModal from "../modals/addcategorymodal";
 import { message } from 'antd';
-import Spinner from "../spinner/spinner";
+import Spinner from "../reusable/spinner/spinner";
 import { KeptoContext } from "../keptoContext/keptoContex";
 import { useNavigate } from "react-router-dom";
 
