@@ -5,6 +5,7 @@ import { message } from 'antd';
 import Spinner from "../reusable/spinner/spinner";
 import { KeptoContext } from "../keptoContext/keptoContex";
 import { useNavigate } from "react-router-dom";
+import useTextFormat from "../custom-hooks/textFormat";
 
 const Category = () => {
   const [categoryList, setCategoryList] = useState<any>([]);
@@ -15,12 +16,28 @@ const Category = () => {
   const { rolesType } = useContext(KeptoContext);
   const ROLE_ACCESS = ["ADMIN", "CEO"];
   const navigate = useNavigate();
+  const [textDataFromAPI, setTextDataFromAPI] = useState<any>("");
+  const { formattedText } = useTextFormat(textDataFromAPI);
 
   useEffect(() => {
     getCategoryList();
     getCategoryListDropdownItems();
-    //console.log("role...", role);
+    getTextData();
   }, []);
+
+  const getTextData = () => {
+    fetch("http://localhost:3000/text_data")
+    .then((res) => {
+      return res.json();
+    })
+    .then((textData: any) => {
+        setTextDataFromAPI(textData);
+    })
+  }
+
+ useEffect(()=>{
+  console.log('formattedText .......', formattedText);
+ }, [formattedText])
 
   const getCategoryList = () => {
     fetch("http://localhost:3000/category")
