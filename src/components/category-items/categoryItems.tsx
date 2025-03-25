@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import style from "./categoryItems.module.scss";
 import { Button, Popover } from 'antd';
 import { PercentageOutlined } from "@ant-design/icons";
+import Header from "../header/header";
 
 
 const CatgeoryItems = () => {
@@ -34,16 +35,21 @@ const CatgeoryItems = () => {
         fetch(`http://localhost:3000/product-list-${id}`).then((productsRes: any) => {
             return productsRes.json();
         }).then((productsData: any) => {
-            setProducts(productsData);
+            const updatedProduct = productsData.map((item: any) => {
+                const discountPrice = Math.ceil(item.price * (item.offer / 100));
+                item.afterDiscount = item.price - discountPrice;
+                return item;
+            })
+            setProducts(updatedProduct);
         })
     }
+
+
 
     const handleMouseEnter = () => {
         if (labelRef.current) {
             const element = labelRef.current;
             const computedStyle = window.getComputedStyle(element);
-            console.log("ELEMENT1...", parseFloat(computedStyle.width));
-            console.log("ELEMENT2...", element.getBoundingClientRect().width);
 
             // Checking if content is truncated using width comparison
             const isTextTruncated =
@@ -55,7 +61,7 @@ const CatgeoryItems = () => {
     }
 
     return (
-        <div className={style["category-products-wrapper"]}>
+            <div className={style["category-products-wrapper"]}>
             <div className={style["category-wrapper"]}>
                 {
                     categorymenu?.map((menu: any) => (
@@ -73,36 +79,45 @@ const CatgeoryItems = () => {
             <div className={style["products-wrapper"]}>
                 {
                     products.map((product: any) => (
-                        <div className={style["product-wapper"]}>
-                            <div className={style["offers-wrapper"]}>
-                                <div className={style["offer-svg"]}>
-                                    <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.62.1/images/offer-tag.svg" alt="" className={style["offer-img"]} />
-                                    <div className={style["offers"]}>
-                                        <div>{product.offer}%</div>
-                                        <div>Off</div>
+                        product.display && (
+                            <div 
+                                className={`${style["product-wapper"]} ${product.out_of_stock ? 
+                                style["out-of-stock"] : 
+                                ""}`}>
+                                <div className={style["offers-wrapper"]}>
+                                    <div className={style["offer-svg"]}>
+                                        <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.62.1/images/offer-tag.svg" alt="" className={style["offer-img"]} />
+                                        <div className={style["offers"]}>
+                                            <div>{product.offer}%</div>
+                                            <div>Off</div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div className={style["product-img-wrapper"]}>
+                                    <img src={product.img_url} alt="" className={style["product-img"]} />
+                                </div>
+                                <div className={style["quantity"]}>{product.quantity} {product.units}</div>
+                                <div className={style["price-wrapper"]}>
+                                    <span className={style["discount-price"]}>{'\u20B9'} {product.afterDiscount}</span>
+                                    <span className={style["price"]}>{'\u20B9'} {product.price}</span>
+                                </div>
+                                <div className={style["product-label-wrapper"]}>
+                                    <Popover content={product.product_name} open={isTruncated}>
+                                        <div className={style["product-label"]} onMouseEnter={handleMouseEnter} ref={labelRef}>{product.product_name}</div>
+                                    </Popover>
+                                </div>
+                                <div className={style["addtocart-wrapper"]}>
+                                    <Button className={style["addtocartbtn"]}>
+                                        Add to Cart
+                                    </Button>
+                                </div>
                             </div>
-                            <div className={style["product-img-wrapper"]}>
-                                <img src={product.img_url} alt="" className={style["product-img"]} />
-                            </div>
-                            <div className={style["quantity"]}>{product.quantity} {product.units}</div>
-                            <div className={style["price"]}>{'\u20B9'} {product.price}</div>
-                            <div className={style["product-label-wrapper"]}>
-                                <Popover content={product.product_name} open={isTruncated}>
-                                    <div className={style["product-label"]} onMouseEnter={handleMouseEnter} ref={labelRef}>{product.product_name}</div>
-                                </Popover>
-                            </div>
-                            <div className={style["addtocart-wrapper"]}>
-                                <Button className={style["addtocartbtn"]}>
-                                    Add to Cart
-                                </Button>
-                            </div>
-                        </div>
+                        )
                     ))
                 }
             </div>
         </div>
+     
     )
 }
 

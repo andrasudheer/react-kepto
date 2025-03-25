@@ -227,7 +227,7 @@
       "price": "59",
       "cartItems": "0",
       "display": true,
-      "out_of_stock": false,
+      "out_of_stock": true,
       "id": "EFV10001",
       "img_url": "https://cdn.zeptonow.com/production/tr:w-400,ar-3000-3000,pr-true,f-auto,q-80/cms/product_variant/a78cef5a-9c14-4b84-898b-75bb6d256b5f.jpeg"
     },
@@ -246,7 +246,7 @@
     {
       "product_name": "Beetroot",
       "offer": "51",
-      "display": true,
+      "display": false,
       "out_of_stock": false,
       "quantity": "250",
       "units": "g",
@@ -270,7 +270,7 @@
     {
       "product_name": "Lady Finger",
       "offer": "11",
-      "display": true,
+      "display": false,
       "out_of_stock": false,
       "quantity": "500",
       "units": "g",
@@ -379,7 +379,7 @@
       "product_name": "Beans Broad (Chikkudu)",
       "offer": "9",
       "display": true,
-      "out_of_stock": false,
+      "out_of_stock": true,
       "quantity": "1",
       "units": "kg",
       "price": "80",

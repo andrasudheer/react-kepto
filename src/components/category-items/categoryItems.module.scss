@@ -58,6 +58,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    .out-of-stock {
+      opacity: 0.5;
+    }
+
     .product-wapper {
       margin: 7px;
       padding: 3px;
@@ -94,6 +98,17 @@
 
       .quantity {
         padding: 8px 0;
+      }
+
+      .price-wrapper {
+        .discount-price {
+
+        }
+        .price {
+          margin: 5px;
+          text-decoration: line-through;
+          font-size: x-small;
+        }
       }
 
       .product-img-wrapper {
@@ -141,3 +156,4 @@
     }
   }
 }
+
