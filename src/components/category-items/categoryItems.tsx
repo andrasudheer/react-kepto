@@ -107,7 +107,7 @@ const CatgeoryItems = () => {
                                     </Popover>
                                 </div>
                                 <div className={style["addtocart-wrapper"]}>
-                                    <Button className={style["addtocartbtn"]}>
+                                    <Button className={style["addtocartbtn"]} disabled={product.out_of_stock}>
                                         Add to Cart
                                     </Button>
                                 </div>

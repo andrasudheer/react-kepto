@@ -7,9 +7,11 @@ import {
   SearchOutlined,
 } from "@ant-design/icons";
 import UsersRole from "../user-roles/userRoles";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [icons, setIcons] = useState<any>({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3000/icons")
@@ -25,12 +27,14 @@ const Header = () => {
       });
   }, []);
   
-
+     const handleZepto  = () => {
+      navigate("/")
+     }
 
   return (
     <div className="header-wrapper">
       <div className="header-item">
-        <img src={icons.LOGO} alt="zepto" />
+        <img src={icons.LOGO} alt="zepto" onClick={handleZepto}/>
       </div>
       <div className="header-item">
         Select Loction

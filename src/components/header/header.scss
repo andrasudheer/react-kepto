@@ -4,6 +4,10 @@
     height: 70px;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
 }
 .searchbar{
     width: 100%;

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     height: 100vh;
     overflow-y: scroll;
@@ -57,10 +57,12 @@
     width: 78%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    top: 73px;
 
     .out-of-stock {
       opacity: 0.5;
-    }
+     }
 
     .product-wapper {
       margin: 7px;
